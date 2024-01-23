@@ -1,7 +1,7 @@
-# Front-End Projects
+# Front-End Projects | Site Clima Tempo
 
 ## 🚀 Introdução
-O presente repositório contém projetos pessoais, com o objetivo de acompanhar meu progresso no estudo de tecnologias e linguagens que envolvam Front-end.
+O presente repositório contém um projeto pessoal em desenvolvimento, com o objetivo de acompanhar meu progresso no estudo de tecnologias e linguagens que envolvam Front-end.
 
 ## 👨‍💻 Tecnologias utilizadas
 
