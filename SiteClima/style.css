@@ -18,6 +18,7 @@
     --search-button: #674188;
     --color-text: #674188;
     --placeholder: #FFFBF5;
+    --input-cityColor: #FFFBF5;
 }
 
 .dark-mode:root {
@@ -28,6 +29,7 @@
     --search-button: #C3ACD0;
     --color-text: #C3ACD0;
     --placeholder: #404440;
+    --input-cityColor: #404440;
 }
 
 body {
@@ -50,8 +52,8 @@ body {
 
 .navbar {
     background-color: var( --navbar-bg);
-    height: 20%;
-    max-height: 144px;
+    height: 120px;
+    max-height: 150px;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -134,23 +136,30 @@ body {
     font-size: 18px;
     background-color: var(--input-city);
     opacity: 0.8;
-    color: #FFFBF5;
-    width: calc(100% - 80px);
+    color: var(--input-cityColor);
+    width: calc(100% - 60px);
 }
 
 .search-button {
     border: none;
     outline: none;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 50%;
     background-color: var(--search-button);
     opacity: 0.8;
     cursor: pointer;
     float: right;
 }
 
+.search-button:hover {
+    opacity: 1.0;
+    transition: opacity 0.8s ease;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: box-shadow 0.3s ease;
+}
+
 .img-search {
-    width: 20px;   
+    width: 20px;  
 }
 
 .city {
@@ -159,18 +168,19 @@ body {
 }
 
 .weather {
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 24pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: 600;
 }
 
 .text-forecast {
-    margin-left: 20px;
+    display: block;
+    font-weight: 600;
+    font-size: 12pt;
     text-transform: capitalize;
-    font-weight: 900;
 }
 
 .humidity {
-    margin-top: 20px;
-    font-weight: 600;
+    font-weight: 800;
 }
