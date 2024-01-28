@@ -20,8 +20,36 @@ function clickOnButton() {
 }
 
 const $html = document.querySelector('html')
-const $checkbox = document.querySelector('#chk')
+const $checkbox = document.querySelector('#toggle_chk')
 
 $checkbox.addEventListener('change', function() {
     $html.classList.toggle('dark-mode')
 })
+
+window.onload = function() { 
+    attachBehaviors(); 
+} 
+
+function attachBehaviors() { 
+    if (document.getElementById('toggle_chk') && 
+        document.getElementById('logo')) { 
+        document.getElementById('logo').style.display='block'; 
+        document.getElementById('toggle_chk').onclick=function() {  
+        toggle_image(this);  
+        }; 
+    } 
+} 
+
+function toggle_image(chk) { 
+    var src=(chk.checked)?'img/LogoTemaEscuro.svg':'img/LogoTemaClaro.svg'; 
+    document.getElementById('logo').src=src; 
+} 
+
+var input = document.getElementById("search");
+
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("searchBtn").click();
+  }
+});
