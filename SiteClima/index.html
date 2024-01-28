@@ -12,31 +12,30 @@
     </head>
     <body>
         <div class="navbar">
-            <img src="img/LogoTemaClaro.svg" alt="logo-weather-report">
+            <img id="logo" src="img/LogoTemaClaro.svg" alt="logo-weather-report">
             <div>
-                <input type="checkbox" class="checkbox" id="chk">
-                <label class="label" for="chk">
+                <input type="checkbox" name="toggle_chk" class="checkbox" id="toggle_chk">
+                <label class="label" for="toggle_chk">
                     <i class="fas fa-moon"></i>
                     <i class="fas fa-sun"></i>
                     <div class="ball"></div>
                 </label>
-            </div>
+            </div>       
         </div>
         <div class="flex">
             <div class="big-box">
-                <input class="input-city" placeholder="Busque por uma cidade...">
-                <button class="search-button" onclick="clickOnButton()">
+                <input id="search" class="input-city" placeholder="Busque por uma cidade...">
+                <button id="searchBtn" class="search-button" onclick="clickOnButton()">
                     <img class="img-search" src="https://www.svgrepo.com/show/488200/find.svg" alt="buscar">
                 </button>
 
                 <div class="medium-box">
-                    <h2 class="city title">Tempo em Salvador</h2>
-                    <p class="weather">27°C</p>
-                    <p class="humidity">Umidade: 76%</p>
-                    <div class="small-box">
-                        <img class="img-forecast" src="https://openweathermap.org/img/wn/04n.png" alt="icone-info-tempo">
-                        <p class="text-forecast">Nublado</p>
-                    </div>
+                    <h2 class="city title">Tempo em ...</h2>
+                    <p class="weather">C°</p>
+                    <h4>Como está o céu?</h4>
+                    <h5 class="text-forecast">Nublado</h5>
+                    <img class="img-forecast" src="https://openweathermap.org/img/wn/04n.png" alt="icone-info-tempo">
+                    <p class="humidity">Umidade:</p>
                 </div>
             </div>
         </div>
